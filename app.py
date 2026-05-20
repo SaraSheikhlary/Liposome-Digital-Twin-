@@ -48,7 +48,7 @@ def show_landing_page():
     with col2:
         st.title("🧪 Liposome-Platelet Activation")
         st.markdown("### Digital Twin Simulation Engine")
-        st.write("Welcome to the research portal. This tool allows you to simulate the efficacy and stability of various anucleated liposome formulations under high shear stress environments.")
+        st.write("Welcome to the research portal. This tool allows you to simulate the efficacy and stability of various liposome formulations under high shear stress environments.")
         st.write("---")
         
         if st.button("Enter Simulation Dashboard ➡️", type="primary", use_container_width=True):
