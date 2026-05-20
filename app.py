@@ -71,7 +71,7 @@ def show_dashboard():
     st.markdown("Enter your precise lipid formulation to simulate efficacy under high shear stress.")
 
     # --- SIDEBAR: LIPID CONCENTRATIONS ---
-    st.sidebar.header("Lipid Formulation (mM)")
+    st.sidebar.header("Lipid Formulation (μM)")
     st.sidebar.markdown("Adjust the concentrations to create your specific liposome mixture.")
 
     cholesterol = st.sidebar.number_input("Cholesterol-rich", min_value=0.0, max_value=50.0, value=10.0, step=0.5)
