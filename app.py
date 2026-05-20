@@ -11,20 +11,20 @@ if 'current_page' not in st.session_state:
     st.session_state.current_page = "Landing"
 
 # --- CINEMATIC BIOMEDICAL BACKGROUND & TEXT READABILITY CSS ---
-# Updated to a premium microscopic cellular/liposome vesicle background image
-background_image_url = "https://images.unsplash.com/photo-1576086213369-97a306d36557?q=80&w=2560&auto=format&fit=crop"
+# Updated to a cinematic, biologically accurate view of real blood cells and platelets in a blood vessel
+background_image_url = "https://images.unsplash.com/photo-1614853316476-de00d14cb1fc?q=80&w=2560&auto=format&fit=crop"
 
 page_bg_img = f'''
 <style>
-/* 55% opacity mask so the biological details pop beautifully without distracting */
+/* 60% opacity mask so the deep crimson vascular details look stunning but don't overwhelm data paths */
 .stApp {{
-    background: linear-gradient(rgba(10, 15, 30, 0.55), rgba(10, 15, 30, 0.55)), url("{background_image_url}");
+    background: linear-gradient(rgba(15, 5, 5, 0.6), rgba(15, 5, 5, 0.6)), url("{background_image_url}");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }}
 
-/* Force all central UI texts to pure white for crisp, readable contrast */
+/* Force all central UI texts to pure white for perfect readability */
 [data-testid="stMain"] h1, 
 [data-testid="stMain"] h2, 
 [data-testid="stMain"] h3, 
@@ -48,7 +48,7 @@ def show_landing_page():
     with col2:
         st.title("🧪 Liposome-Platelet Activation")
         st.markdown("### Digital Twin Simulation Engine")
-        st.write("Welcome to the research portal. This tool allows you to simulate the efficacy and stability of various liposome formulations under high shear stress environments.")
+        st.write("Welcome to the research portal. This tool allows you to simulate the efficacy and stability of various anucleated liposome formulations under high shear stress environments.")
         st.write("---")
         
         if st.button("Enter Simulation Dashboard ➡️", type="primary", use_container_width=True):
