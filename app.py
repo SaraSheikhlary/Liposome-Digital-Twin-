@@ -52,7 +52,7 @@ def show_landing_page():
 def show_dashboard():
     col1, col2 = st.columns([4, 1])
     with col1:
-        st.title("📊 NovaShear AI Analytics Dashboard")
+        st.title("NovaShear AI Analytics Dashboard")
     with col2:
         if st.button("⬅️ Return Home", use_container_width=True):
             st.session_state.current_page = "Landing"
@@ -119,6 +119,6 @@ st.markdown("""
     <hr style="border: 1px solid rgba(255,255,255,0.15); margin-top: 50px;">
     <div style='text-align: center; color: rgba(255,255,255,0.6); font-size: 13px; margin-bottom: 20px;'>
         &copy; 2026 Sara Sheikhlary | Powered by NovaShear AI&trade;. All Rights Reserved. <br>
-        Confidential & Proprietary Research. Do not distribute without permission.
+        Confidential & Proprietary Research. 
     </div>
 """, unsafe_allow_html=True)
