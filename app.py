@@ -11,25 +11,25 @@ if 'current_page' not in st.session_state:
     st.session_state.current_page = "Landing"
 
 # --- CINEMATIC BIOMEDICAL BACKGROUND ---
-# Using a highly realistic, microscopic cellular environment (SEM style)
-background_image_url = "https://images.unsplash.com/photo-1579154204601-01588f351e67?q=80&w=2560&auto=format&fit=crop"
+# High-fidelity realistic vascular, platelet, and cellular environment
+background_image_url = "https://images.unsplash.com/photo-1614947111590-9cb69e5d421a?q=80&w=2560&auto=format&fit=crop"
 
 page_bg_img = f'''
 <style>
-/* Dark mask for readability over the realistic microscopic texture */
+/* Dark crimson/black mask for perfect readability over the complex blood vessel texture */
 .stApp {{
-    background: linear-gradient(rgba(10, 5, 5, 0.7), rgba(10, 5, 5, 0.7)), url("{background_image_url}");
+    background: linear-gradient(rgba(15, 5, 5, 0.8), rgba(10, 5, 5, 0.85)), url("{background_image_url}");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }}
 
-/* Ensure all text is high-contrast white with shadow */
+/* Ensure all text is high-contrast white with a strong drop shadow */
 [data-testid="stMain"] h1, [data-testid="stMain"] h2, [data-testid="stMain"] h3, 
 [data-testid="stMain"] h4, [data-testid="stMain"] p, [data-testid="stMain"] label,
 [data-testid="stMain"] [data-testid="stMarkdownContainer"] {{
     color: #FFFFFF !important;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.9);
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.95);
 }}
 </style>
 '''
