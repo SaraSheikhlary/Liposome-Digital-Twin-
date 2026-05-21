@@ -39,7 +39,7 @@ def show_landing_page():
     st.markdown("<br><br><br><br><br>", unsafe_allow_html=True)
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
-        st.title("🧪 Liposome-Platelet Activation")
+        st.title("Liposome-Platelet Activation")
         st.markdown("### Digital Twin Simulation Engine")
         st.write("Welcome. Simulate the efficacy of liposome formulations in μM concentration ranges.")
         if st.button("Enter Simulation Dashboard ➡️", type="primary", use_container_width=True):
@@ -52,7 +52,7 @@ def show_landing_page():
 def show_dashboard():
     col1, col2 = st.columns([4, 1])
     with col1:
-        st.title("📊 Simulation Dashboard")
+        st.title("Simulation Dashboard")
     with col2:
         if st.button("⬅️ Return Home", use_container_width=True):
             st.session_state.current_page = "Landing"
