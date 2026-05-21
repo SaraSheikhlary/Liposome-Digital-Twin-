@@ -39,7 +39,7 @@ def show_landing_page():
     st.markdown("<br><br><br><br><br>", unsafe_allow_html=True)
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
-        st.title("⚡ NovaShear AI")
+        st.title("NovaShear-AI")
         st.markdown("### Next-Gen Liposome-Platelet Digital Twin")
         st.write("Predictive simulation engine for evaluating liposome formulation efficacy across shear-stress and μM concentration ranges.")
         if st.button("Enter NovaShear Dashboard ➡️", type="primary", use_container_width=True):
