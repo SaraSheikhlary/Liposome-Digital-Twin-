@@ -4,7 +4,7 @@ import plotly.express as px
 import numpy as np
 
 # --- PAGE CONFIGURATION ---
-st.set_page_config(page_title="Liposome Digital Twin", layout="wide")
+st.set_page_config(page_title="NovaShear AI - Digital Twin", layout="wide")
 
 # --- SESSION STATE INITIALIZATION ---
 if 'current_page' not in st.session_state:
@@ -16,7 +16,7 @@ background_image_url = "https://images.unsplash.com/photo-1576086213369-97a306d3
 
 page_bg_img = f'''
 <style>
-/* Dark crimson mask - opacity reduced so the background cells are more visible */
+/* Dark crimson mask with optimal opacity for background cell visibility */
 .stApp {{
     background: linear-gradient(rgba(20, 5, 5, 0.65), rgba(10, 5, 5, 0.75)), url("{background_image_url}");
     background-size: cover;
@@ -39,10 +39,10 @@ def show_landing_page():
     st.markdown("<br><br><br><br><br>", unsafe_allow_html=True)
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
-        st.title("🧪 Liposome-Platelet Activation")
-        st.markdown("### Digital Twin Simulation Engine")
-        st.write("Welcome. Simulate the efficacy of liposome formulations in μM concentration ranges.")
-        if st.button("Enter Simulation Dashboard ➡️", type="primary", use_container_width=True):
+        st.title("⚡ NovaShear AI")
+        st.markdown("### Next-Gen Liposome-Platelet Digital Twin")
+        st.write("Predictive simulation engine for evaluating liposome formulation efficacy across shear-stress and μM concentration ranges.")
+        if st.button("Enter NovaShear Dashboard ➡️", type="primary", use_container_width=True):
             st.session_state.current_page = "Dashboard"
             st.rerun()
 
@@ -52,7 +52,7 @@ def show_landing_page():
 def show_dashboard():
     col1, col2 = st.columns([4, 1])
     with col1:
-        st.title("📊 Simulation Dashboard")
+        st.title("📊 NovaShear AI Analytics Dashboard")
     with col2:
         if st.button("⬅️ Return Home", use_container_width=True):
             st.session_state.current_page = "Landing"
@@ -85,7 +85,7 @@ def show_dashboard():
         st.plotly_chart(fig_pie, use_container_width=True)
 
         if st.button("▶ Run PINN Simulation", type="primary"):
-            st.success("Simulation Engine Triggered!")
+            st.success("NovaShear PINN Engine Triggered Successfully!")
 
     with col_right:
         st.subheader("Comparative Activation Response")
@@ -118,7 +118,7 @@ elif st.session_state.current_page == "Dashboard":
 st.markdown("""
     <hr style="border: 1px solid rgba(255,255,255,0.15); margin-top: 50px;">
     <div style='text-align: center; color: rgba(255,255,255,0.6); font-size: 13px; margin-bottom: 20px;'>
-        &copy; 2026 Sara Sheikhlary. All Rights Reserved. <br>
+        &copy; 2026 Sara Sheikhlary | Powered by NovaShear AI&trade;. All Rights Reserved. <br>
         Confidential & Proprietary Research. Do not distribute without permission.
     </div>
 """, unsafe_allow_html=True)
