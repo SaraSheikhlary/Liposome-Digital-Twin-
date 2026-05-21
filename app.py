@@ -11,14 +11,14 @@ if 'current_page' not in st.session_state:
     st.session_state.current_page = "Landing"
 
 # --- CINEMATIC BIOMEDICAL BACKGROUND ---
-# Using a highly realistic, anatomical heart background
-background_image_url = "https://images.unsplash.com/photo-1628595351029-c2c60c0429f4?q=80&w=2560&auto=format&fit=crop"
+# Using a highly realistic, microscopic cellular environment (SEM style)
+background_image_url = "https://images.unsplash.com/photo-1579154204601-01588f351e67?q=80&w=2560&auto=format&fit=crop"
 
 page_bg_img = f'''
 <style>
-/* Dark mask for readability over the realistic heart texture */
+/* Dark mask for readability over the realistic microscopic texture */
 .stApp {{
-    background: linear-gradient(rgba(10, 5, 5, 0.6), rgba(10, 5, 5, 0.6)), url("{background_image_url}");
+    background: linear-gradient(rgba(10, 5, 5, 0.7), rgba(10, 5, 5, 0.7)), url("{background_image_url}");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
