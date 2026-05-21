@@ -39,7 +39,7 @@ def show_landing_page():
     st.markdown("<br><br><br><br><br>", unsafe_allow_html=True)
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
-        st.title("Liposome-Platelet Activation")
+        st.title("🧪 Liposome-Platelet Activation")
         st.markdown("### Digital Twin Simulation Engine")
         st.write("Welcome. Simulate the efficacy of liposome formulations in μM concentration ranges.")
         if st.button("Enter Simulation Dashboard ➡️", type="primary", use_container_width=True):
@@ -52,7 +52,7 @@ def show_landing_page():
 def show_dashboard():
     col1, col2 = st.columns([4, 1])
     with col1:
-        st.title("Simulation Dashboard")
+        st.title("📊 Simulation Dashboard")
     with col2:
         if st.button("⬅️ Return Home", use_container_width=True):
             st.session_state.current_page = "Landing"
@@ -108,7 +108,17 @@ def show_dashboard():
         
         st.metric(label="Total Activation Reduction Efficiency", value=f"{min(stabilization_effect, 100):.1f}% Lower")
 
+# --- PAGE ROUTING ---
 if st.session_state.current_page == "Landing":
     show_landing_page()
 elif st.session_state.current_page == "Dashboard":
     show_dashboard()
+
+# --- PRIVACY & COPYRIGHT FOOTER ---
+st.markdown("""
+    <hr style="border: 1px solid rgba(255,255,255,0.15); margin-top: 50px;">
+    <div style='text-align: center; color: rgba(255,255,255,0.6); font-size: 13px; margin-bottom: 20px;'>
+        &copy; 2026 Sara Sheikhlary. All Rights Reserved. <br>
+        Confidential & Proprietary Research. Do not distribute without permission.
+    </div>
+""", unsafe_allow_html=True)
