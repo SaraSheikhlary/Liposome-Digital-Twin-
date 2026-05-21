@@ -16,17 +16,17 @@ background_image_url = "https://images.unsplash.com/photo-1576086213369-97a306d3
 
 page_bg_img = f'''
 <style>
-/* Dark crimson mask for perfect readability over the complex blood vessel texture */
+/* Dark crimson mask - opacity reduced so the background cells are more visible */
 .stApp {{
-    background: linear-gradient(rgba(20, 5, 5, 0.85), rgba(10, 5, 5, 0.90)), url("{background_image_url}");
+    background: linear-gradient(rgba(20, 5, 5, 0.65), rgba(10, 5, 5, 0.75)), url("{background_image_url}");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }}
 
-/* Ensure all text in the main body is high-contrast white with a drop shadow */
+/* Ensure all text in the main body is high-contrast white with a strong drop shadow */
 .stApp h1, .stApp h2, .stApp h3, .stApp p, .stApp label, .stApp div {{
-    text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+    text-shadow: 2px 2px 6px rgba(0,0,0,1.0);
 }}
 </style>
 '''
